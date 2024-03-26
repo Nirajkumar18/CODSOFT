@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: gilroy;
+
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+
+#main{
+	height: 100%;
+	width: 100%;
+	background-color: #a4dada;
+	position: relative;
+}
+#nav{
+	display: flex;
+	height: 60px;
+	width: 100%;
+	padding: 10px 3px 2px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: black;
+	color: white;
+}
+#nav img{
+	height: 40px;
+	margin-left: 20px;
+	margin-right: 50px;
+	/* margin-right: 650px; */
+}
+#nav-prt1{
+	display: flex;
+	align-items: center;
+	flex: 2;
+	justify-content: space-between;
+	/* justify-content: center; */
+
+}
+#navLinks{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+#nav-prt1 h4{
+	margin-right: 60px;
+	font-size: 19px;
+	font-weight: 500;
+	cursor: pointer;
+}
+#nav-prt2{
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+}
+#nav-prt2 i{
+padding: 0px 20px;
+	/* margin-right: 35px; */
+	font-size: 22px;
+	font-weight: 500;
+	cursor: pointer;
+}
+#content{
+	width: 100%;
+	height: calc(100% -110px);
+	position: relative;
+	display: flex;
+}
+#left{
+	width: 40%;
+	height: 100%;
+	padding: 120px 95px;
+}
+#left h5{
+	font-size: 17px;
+	margin-bottom: 5px;
+	color: black;
+}
+#left h1{
+	font-size: 45px;
+	margin-bottom: 15px;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+#left p{
+	font-size: 17px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+#left button{
+	background-color: black;
+	color: white;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 12px 10px;
+	border-radius: 40px;
+	border-top-left-radius: 0px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+#right{
+	width: 60%;
+	height: 100%;
+	position: relative;
+	padding: 55px 20px;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+#right::-webkit-scrollbar{
+	display: none;
+}
+.elem{
+	height: 500px;
+	width: 380px;
+	background-color: white;
+	position: relative;
+	border-radius: 20px;
+	margin-right: 20px;
+	box-shadow: #beb5b5;
+	display: inline-block;
+}
+.elem img{
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+	object-fit: fill;
+	position: absolute;
+}
+.elem #btnPrice{
+	display: flex;
+	z-index: 100;
+	position: relative;
+	transform: translate(0px, 445px);
+	justify-content: space-between;
+	padding: 0px 10px;
+}
+.elem #btnPrice h4{
+	background-color: #7fcbcb;
+	padding: 15px 30px;
+	border-radius: 6px;
+}
+.elem #btnPrice h5{
+	color: white;
+	background-color: black;
+	padding: 15px 30px;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 6px;
+}
